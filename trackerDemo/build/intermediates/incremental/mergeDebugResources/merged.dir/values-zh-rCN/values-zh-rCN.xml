@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="After_login_out_all_connected_devices_are_disconnected">退出登录后将断开所有已连接的设备?</string>
     <string name="Alarm">断开连接时报警</string>
     <string name="Battery">电量:</string>
@@ -37,6 +37,7 @@
     <string name="cannot_activate_repeatedly">不能重复激活账户!</string>
     <string name="clear_record">清除记录还原设置</string>
     <string name="close">关闭 </string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g>无法访问 Google Play 服务，请重试。"</string>
     <string name="complete">完成</string>
     <string name="confirm">确 定</string>
     <string name="connect">已连接</string>

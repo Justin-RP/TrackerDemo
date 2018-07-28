@@ -61,7 +61,7 @@ public class BluetoothDeviceIncreaseAdapter extends BaseAdapter{
 		LayoutInflater inflater = LayoutInflater.from(context);
 		View view = inflater.inflate(R.layout.bluetooth_increase_listview, null);
 		TextView tv_name = (TextView) view.findViewById(R.id.tv_name);
-		//TextView tv_name = (TextView) view.findViewById(R.id.tv_bluetooth_listview_name);
+//		TextView tv_name = (TextView) view.findViewById(R.id.tv_bluetooth_listview_name);
 		ImageView iv_bluetooth_listview_item = (ImageView) view.findViewById(R.id.iv_bluetooth_listview_item);
 		
 		WindowManager m = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE); 

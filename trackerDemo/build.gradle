@@ -18,12 +18,15 @@ android {
     }
 
     aaptOptions {
-            cruncherEnabled false
-        }
+        cruncherEnabled false
+    }
 }
 
 dependencies {
     implementation project(':slidingMenuLibrary')
     api 'com.nextgen.biiken:biikensdk:1.0.0'
     //compile files('libs/swallesdk.jar')
+    implementation 'com.google.firebase:firebase-database:11.8.0'
 }
+
+apply plugin: 'com.google.gms.google-services'

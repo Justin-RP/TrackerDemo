@@ -61,12 +61,15 @@ public class BluetoothDevicePreserveAdapter extends BaseAdapter{
 	public boolean setState(int state, int id) {
 		list_state.set(id, state);
 		this.notifyDataSetChanged();
+        // TODO (Just) [1] What is indexOf and what is -1
 		if(list_state.indexOf(0) == -1){
 			return true;
 		}
 		return false;
 	}
-	
+
+	//diff get and index of ?
+	// sets all the device that exist to not exist
 	public void initData(){
 		for (int i = 0; i < list_state.size(); i++) {
 			if(list_state.get(i) == 1){
@@ -80,6 +83,7 @@ public class BluetoothDevicePreserveAdapter extends BaseAdapter{
 		this.context = context;
 		this.list_state = list_state;
 		this.list_BluetoothDevice = list_BluetoothDevice;
+
 		bluetoothClass = BluetoothClass.getBluetoothClass();
 		sqLiteClass = new BluetoothSQLiteClass(context);
 		WindowManager m = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
@@ -109,13 +113,16 @@ public class BluetoothDevicePreserveAdapter extends BaseAdapter{
 
 		Button bt_bluetooth_disconnect = (Button) view.findViewById(R.id.bt_bluetooth_disconnect);
 
+		//ImageView is not used yet
 		ImageView iv_toux = (ImageView) view.findViewById(R.id.iv_bluetooth_listview_item);
 		WindowManager m = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
 		display = m.getDefaultDisplay();
 		
 		BluetoothDevice device = list_BluetoothDevice.get(position);
+        // TODO (Just) [2] find out what bluetooth retrieves from database
 		Bluetooth bluetooth = sqLiteClass.SelectBluetooth(device.getAddress());
-		
+
+        // TODO (Just) [3] why is it only when connect successfully then VISIBLE, what is EXIST
 		if(list_state.get(position) == 0){
 			bt_bluetooth_disconnect.setVisibility(View.GONE);
 		}else if (list_state.get(position) == 1) {
@@ -131,10 +138,12 @@ public class BluetoothDevicePreserveAdapter extends BaseAdapter{
 			@Override
 			public void onClick(View v) {
 				setState(1, position);
+				// TODO (Just) [4] what is bluetoothClass
 				bluetoothClass.stopSearchBluetooth();
 				bluetoothClass.disconnectBluetooth(list_BluetoothDevice.get(position));
 			}
 		});
+        // TODO (Just) [5] what does setDescendantFocusability do
 		((ViewGroup)view).setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
 		return view;
 	}
