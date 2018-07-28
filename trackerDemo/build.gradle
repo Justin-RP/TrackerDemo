@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 21
     buildToolsVersion '27.0.3'
 
     defaultConfig {
@@ -26,7 +26,7 @@ dependencies {
     implementation project(':slidingMenuLibrary')
     api 'com.nextgen.biiken:biikensdk:1.0.0'
     //compile files('libs/swallesdk.jar')
-    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

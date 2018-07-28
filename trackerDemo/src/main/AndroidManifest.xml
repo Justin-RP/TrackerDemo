@@ -14,7 +14,7 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <!-- Allows applications to discover and pair bluetooth devices -->
+     Allows applications to discover and pair bluetooth devices
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <!-- Allows applications to connect to paired bluetooth devices -->
     <uses-permission android:name="android.permission.BLUETOOTH" />

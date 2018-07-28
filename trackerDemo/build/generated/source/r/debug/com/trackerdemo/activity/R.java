@@ -33,14 +33,139 @@ public final class R {
      */
     public static final int behindWidth=0x7f020002;
     /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>icon_only</td><td>2</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * <tr><td>wide</td><td>1</td><td></td></tr>
+     * </table>
      */
-    public static final int fadeDegree=0x7f020003;
+    public static final int buttonSize=0x7f020003;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int fadeEnabled=0x7f020004;
+    public static final int circleCrop=0x7f020004;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>auto</td><td>2</td><td></td></tr>
+     * <tr><td>dark</td><td>0</td><td></td></tr>
+     * <tr><td>light</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int colorScheme=0x7f020005;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int fadeDegree=0x7f020006;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int fadeEnabled=0x7f020007;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int font=0x7f020008;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderAuthority=0x7f020009;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int fontProviderCerts=0x7f02000a;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontProviderFetchStrategy=0x7f02000b;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontProviderFetchTimeout=0x7f02000c;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderPackage=0x7f02000d;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderQuery=0x7f02000e;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>italic</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontStyle=0x7f02000f;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int fontWeight=0x7f020010;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int imageAspectRatio=0x7f020011;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
+     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int imageAspectRatioAdjust=0x7f020012;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -52,26 +177,35 @@ public final class R {
      * <tr><td>right</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int mode=0x7f020005;
+    public static final int mode=0x7f020013;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int scopeUris=0x7f020014;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectorDrawable=0x7f020006;
+    public static final int selectorDrawable=0x7f020015;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int selectorEnabled=0x7f020007;
+    public static final int selectorEnabled=0x7f020016;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int shadowDrawable=0x7f020008;
+    public static final int shadowDrawable=0x7f020017;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -79,7 +213,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int shadowWidth=0x7f020009;
+    public static final int shadowWidth=0x7f020018;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -92,7 +226,7 @@ public final class R {
      * <tr><td>none</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int touchModeAbove=0x7f02000a;
+    public static final int touchModeAbove=0x7f020019;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -105,425 +239,875 @@ public final class R {
      * <tr><td>none</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int touchModeBehind=0x7f02000b;
+    public static final int touchModeBehind=0x7f02001a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int viewAbove=0x7f02000c;
+    public static final int viewAbove=0x7f02001b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int viewBehind=0x7f02000d;
+    public static final int viewBehind=0x7f02001c;
+  }
+  public static final class bool {
+    public static final int abc_action_bar_embed_tabs=0x7f030000;
   }
   public static final class color {
-    public static final int txt_tab_selector=0x7f030000;
+    public static final int common_google_signin_btn_text_dark=0x7f040000;
+    public static final int common_google_signin_btn_text_dark_default=0x7f040001;
+    public static final int common_google_signin_btn_text_dark_disabled=0x7f040002;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f040003;
+    public static final int common_google_signin_btn_text_dark_pressed=0x7f040004;
+    public static final int common_google_signin_btn_text_light=0x7f040005;
+    public static final int common_google_signin_btn_text_light_default=0x7f040006;
+    public static final int common_google_signin_btn_text_light_disabled=0x7f040007;
+    public static final int common_google_signin_btn_text_light_focused=0x7f040008;
+    public static final int common_google_signin_btn_text_light_pressed=0x7f040009;
+    public static final int common_google_signin_btn_tint=0x7f04000a;
+    public static final int notification_action_color_filter=0x7f04000b;
+    public static final int notification_icon_bg_color=0x7f04000c;
+    public static final int notification_material_background_media_default_color=0x7f04000d;
+    public static final int primary_text_default_material_dark=0x7f04000e;
+    public static final int ripple_material_light=0x7f04000f;
+    public static final int secondary_text_default_material_dark=0x7f040010;
+    public static final int secondary_text_default_material_light=0x7f040011;
+    public static final int txt_tab_selector=0x7f040012;
+  }
+  public static final class dimen {
+    public static final int compat_button_inset_horizontal_material=0x7f050000;
+    public static final int compat_button_inset_vertical_material=0x7f050001;
+    public static final int compat_button_padding_horizontal_material=0x7f050002;
+    public static final int compat_button_padding_vertical_material=0x7f050003;
+    public static final int compat_control_corner_material=0x7f050004;
+    public static final int notification_action_icon_size=0x7f050005;
+    public static final int notification_action_text_size=0x7f050006;
+    public static final int notification_big_circle_margin=0x7f050007;
+    public static final int notification_content_margin_start=0x7f050008;
+    public static final int notification_large_icon_height=0x7f050009;
+    public static final int notification_large_icon_width=0x7f05000a;
+    public static final int notification_main_column_padding_top=0x7f05000b;
+    public static final int notification_media_narrow_margin=0x7f05000c;
+    public static final int notification_right_icon_size=0x7f05000d;
+    public static final int notification_right_side_padding_top=0x7f05000e;
+    public static final int notification_small_icon_background_padding=0x7f05000f;
+    public static final int notification_small_icon_size_as_large=0x7f050010;
+    public static final int notification_subtext_size=0x7f050011;
+    public static final int notification_top_pad=0x7f050012;
+    public static final int notification_top_pad_large_text=0x7f050013;
   }
   public static final class drawable {
-    public static final int all=0x7f040000;
-    public static final int back=0x7f040001;
-    public static final int bg_bluetooth=0x7f040002;
-    public static final int bg_dialog=0x7f040003;
-    public static final int bg_dialog_menu_edit=0x7f040004;
-    public static final int bg_listview_item=0x7f040005;
-    public static final int bg_listview_select=0x7f040006;
-    public static final int bg_listview_unselect=0x7f040007;
-    public static final int bg_loading=0x7f040008;
-    public static final int bg_login=0x7f040009;
-    public static final int bg_main_color_light=0x7f04000a;
-    public static final int bg_main_offline=0x7f04000b;
-    public static final int bg_main_switch_light=0x7f04000c;
-    public static final int bg_timing=0x7f04000d;
-    public static final int bg_timing_title=0x7f04000e;
-    public static final int bluetooth_on=0x7f04000f;
-    public static final int bt_dialog_menu_delete_select=0x7f040010;
-    public static final int bt_dialog_menu_delete_unselect=0x7f040011;
-    public static final int bt_dialog_menu_edit_select=0x7f040012;
-    public static final int bt_dialog_menu_edit_unselect=0x7f040013;
-    public static final int bt_dialog_no_select=0x7f040014;
-    public static final int bt_dialog_no_unselect=0x7f040015;
-    public static final int bt_dialog_ok_select=0x7f040016;
-    public static final int bt_dialog_ok_unselect=0x7f040017;
-    public static final int bt_dialog_remov_select=0x7f040018;
-    public static final int bt_dialog_remov_unselect=0x7f040019;
-    public static final int bt_listview_select=0x7f04001a;
-    public static final int bt_listview_unselect=0x7f04001b;
-    public static final int bt_main_bluetooth_select=0x7f04001c;
-    public static final int bt_main_bluetooth_unselect=0x7f04001d;
-    public static final int bt_main_brightness_high=0x7f04001e;
-    public static final int bt_main_brightness_low=0x7f04001f;
-    public static final int bt_main_collect_select=0x7f040020;
-    public static final int bt_main_collect_unselect=0x7f040021;
-    public static final int bt_main_color_light_select=0x7f040022;
-    public static final int bt_main_color_light_unselect=0x7f040023;
-    public static final int bt_main_switch_open=0x7f040024;
-    public static final int bt_main_switch_shut=0x7f040025;
-    public static final int bt_main_timing_nor=0x7f040026;
-    public static final int bt_main_timing_press=0x7f040027;
-    public static final int bt_main_timings_nor=0x7f040028;
-    public static final int bt_main_timings_press=0x7f040029;
-    public static final int bt_main_white_light_select=0x7f04002a;
-    public static final int bt_main_white_light_unselect=0x7f04002b;
-    public static final int bt_search=0x7f04002c;
-    public static final int bt_timing_close_nor=0x7f04002d;
-    public static final int bt_timing_close_press=0x7f04002e;
-    public static final int bt_timing_delete_nor=0x7f04002f;
-    public static final int bt_timing_delete_press=0x7f040030;
-    public static final int bt_timing_off_select=0x7f040031;
-    public static final int bt_timing_off_unselect=0x7f040032;
-    public static final int bt_timing_on_select=0x7f040033;
-    public static final int bt_timing_on_unselect=0x7f040034;
-    public static final int button=0x7f040035;
-    public static final int color_picker=0x7f040036;
-    public static final int color_range=0x7f040037;
-    public static final int colorno=0x7f040038;
-    public static final int colorset=0x7f040039;
-    public static final int control_ri=0x7f04003a;
-    public static final int danxuan_nor=0x7f04003b;
-    public static final int danxuan_select=0x7f04003c;
-    public static final int defult=0x7f04003d;
-    public static final int dialog_menu_delete=0x7f04003e;
-    public static final int dialog_menu_edit=0x7f04003f;
-    public static final int dialog_menu_edit_no=0x7f040040;
-    public static final int dialog_menu_edit_ok=0x7f040041;
-    public static final int dialog_menu_edit_remov=0x7f040042;
-    public static final int dis=0x7f040043;
-    public static final int ditu=0x7f040044;
-    public static final int edit=0x7f040045;
-    public static final int edit1=0x7f040046;
-    public static final int edit2=0x7f040047;
-    public static final int edtext_bg=0x7f040048;
-    public static final int email=0x7f040049;
-    public static final int end=0x7f04004a;
-    public static final int et_dialog_menu_edit=0x7f04004b;
-    public static final int exit=0x7f04004c;
-    public static final int exit1=0x7f04004d;
-    public static final int exit2=0x7f04004e;
-    public static final int five=0x7f04004f;
-    public static final int four=0x7f040050;
-    public static final int gantanhao=0x7f040051;
-    public static final int go=0x7f040052;
-    public static final int guanji=0x7f040053;
-    public static final int ic_launcher=0x7f040054;
-    public static final int ic_s_light=0x7f040055;
-    public static final int increase_device=0x7f040056;
-    public static final int iv_battery=0x7f040057;
-    public static final int iv_loading_says1=0x7f040058;
-    public static final int iv_loading_says2=0x7f040059;
-    public static final int iv_loading_says3=0x7f04005a;
-    public static final int iv_loading_says4=0x7f04005b;
-    public static final int iv_main_switch_light=0x7f04005c;
-    public static final int iv_rssi=0x7f04005d;
-    public static final int iv_state=0x7f04005e;
-    public static final int iv_timing_delete=0x7f04005f;
-    public static final int jiantou=0x7f040060;
-    public static final int lanya=0x7f040061;
-    public static final int left_check=0x7f040062;
-    public static final int left_selector=0x7f040063;
-    public static final int left_uncheck=0x7f040064;
-    public static final int lin_but=0x7f040065;
-    public static final int line=0x7f040066;
-    public static final int list_model_checked=0x7f040067;
-    public static final int list_model_selector=0x7f040068;
-    public static final int list_model_unchecked=0x7f040069;
-    public static final int loading_radio=0x7f04006a;
-    public static final int location_marker=0x7f04006b;
-    public static final int login=0x7f04006c;
-    public static final int luzhi=0x7f04006d;
-    public static final int main_bluetooth=0x7f04006e;
-    public static final int main_collect=0x7f04006f;
-    public static final int main_seekbar_background=0x7f040070;
-    public static final int main_seekbar_drawable=0x7f040071;
-    public static final int main_seekbar_progress=0x7f040072;
-    public static final int main_timing=0x7f040073;
-    public static final int main_timings=0x7f040074;
-    public static final int map_model=0x7f040075;
-    public static final int map_model_checked=0x7f040076;
-    public static final int map_model_selector=0x7f040077;
-    public static final int map_model_unchecked=0x7f040078;
-    public static final int middle_check=0x7f040079;
-    public static final int middle_selector=0x7f04007a;
-    public static final int middle_uncheck=0x7f04007b;
-    public static final int one=0x7f04007c;
-    public static final int paizhao=0x7f04007d;
-    public static final int paizhao1=0x7f04007e;
-    public static final int parting_line=0x7f04007f;
-    public static final int password=0x7f040080;
-    public static final int pic=0x7f040081;
-    public static final int preserve_device=0x7f040082;
-    public static final int qianbi=0x7f040083;
-    public static final int radio_button=0x7f040084;
-    public static final int register=0x7f040085;
-    public static final int register_back=0x7f040086;
-    public static final int right_selector=0x7f040087;
-    public static final int rigth_check=0x7f040088;
-    public static final int rigth_uncheack=0x7f040089;
-    public static final int rssi=0x7f04008a;
-    public static final int rssicolor1=0x7f04008b;
-    public static final int rssicolor2=0x7f04008c;
-    public static final int s=0x7f04008d;
-    public static final int sb_main_brightness_select=0x7f04008e;
-    public static final int sb_main_brightness_thumb=0x7f04008f;
-    public static final int sb_main_brightness_unselect=0x7f040090;
-    public static final int scan=0x7f040091;
-    public static final int search=0x7f040092;
-    public static final int setname=0x7f040093;
-    public static final int setname1=0x7f040094;
-    public static final int setname2=0x7f040095;
-    public static final int setting=0x7f040096;
-    public static final int shezhi=0x7f040097;
-    public static final int start_icon=0x7f040098;
-    public static final int startloading=0x7f040099;
-    public static final int startloading_bg=0x7f04009a;
-    public static final int startloading_icon=0x7f04009b;
-    public static final int switch_bottom=0x7f04009c;
-    public static final int switch_btn_pressed=0x7f04009d;
-    public static final int switch_frame=0x7f04009e;
-    public static final int switch_mask=0x7f04009f;
-    public static final int sxt1=0x7f0400a0;
-    public static final int sxt2=0x7f0400a1;
-    public static final int sxt_but=0x7f0400a2;
-    public static final int three=0x7f0400a3;
-    public static final int timing_close=0x7f0400a4;
-    public static final int timing_delete=0x7f0400a5;
-    public static final int top=0x7f0400a6;
-    public static final int tubiao=0x7f0400a7;
-    public static final int tv_dialog_menu_delete=0x7f0400a8;
-    public static final int tv_dialog_menu_edit=0x7f0400a9;
-    public static final int tv_dialog_menu_edit_no=0x7f0400aa;
-    public static final int tv_dialog_menu_edit_ok=0x7f0400ab;
-    public static final int two=0x7f0400ac;
-    public static final int user=0x7f0400ad;
-    public static final int vodeo=0x7f0400ae;
-    public static final int xiangji=0x7f0400af;
-    public static final int xj=0x7f0400b0;
-    public static final int xjsg1=0x7f0400b1;
-    public static final int xjsg2=0x7f0400b2;
-    public static final int yj_bk=0x7f0400b3;
-    public static final int zhaoxiang=0x7f0400b4;
+    public static final int all=0x7f060000;
+    public static final int back=0x7f060001;
+    public static final int bg_bluetooth=0x7f060002;
+    public static final int bg_dialog=0x7f060003;
+    public static final int bg_dialog_menu_edit=0x7f060004;
+    public static final int bg_listview_item=0x7f060005;
+    public static final int bg_listview_select=0x7f060006;
+    public static final int bg_listview_unselect=0x7f060007;
+    public static final int bg_loading=0x7f060008;
+    public static final int bg_login=0x7f060009;
+    public static final int bg_main_color_light=0x7f06000a;
+    public static final int bg_main_offline=0x7f06000b;
+    public static final int bg_main_switch_light=0x7f06000c;
+    public static final int bg_timing=0x7f06000d;
+    public static final int bg_timing_title=0x7f06000e;
+    public static final int bluetooth_on=0x7f06000f;
+    public static final int bt_dialog_menu_delete_select=0x7f060010;
+    public static final int bt_dialog_menu_delete_unselect=0x7f060011;
+    public static final int bt_dialog_menu_edit_select=0x7f060012;
+    public static final int bt_dialog_menu_edit_unselect=0x7f060013;
+    public static final int bt_dialog_no_select=0x7f060014;
+    public static final int bt_dialog_no_unselect=0x7f060015;
+    public static final int bt_dialog_ok_select=0x7f060016;
+    public static final int bt_dialog_ok_unselect=0x7f060017;
+    public static final int bt_dialog_remov_select=0x7f060018;
+    public static final int bt_dialog_remov_unselect=0x7f060019;
+    public static final int bt_listview_select=0x7f06001a;
+    public static final int bt_listview_unselect=0x7f06001b;
+    public static final int bt_main_bluetooth_select=0x7f06001c;
+    public static final int bt_main_bluetooth_unselect=0x7f06001d;
+    public static final int bt_main_brightness_high=0x7f06001e;
+    public static final int bt_main_brightness_low=0x7f06001f;
+    public static final int bt_main_collect_select=0x7f060020;
+    public static final int bt_main_collect_unselect=0x7f060021;
+    public static final int bt_main_color_light_select=0x7f060022;
+    public static final int bt_main_color_light_unselect=0x7f060023;
+    public static final int bt_main_switch_open=0x7f060024;
+    public static final int bt_main_switch_shut=0x7f060025;
+    public static final int bt_main_timing_nor=0x7f060026;
+    public static final int bt_main_timing_press=0x7f060027;
+    public static final int bt_main_timings_nor=0x7f060028;
+    public static final int bt_main_timings_press=0x7f060029;
+    public static final int bt_main_white_light_select=0x7f06002a;
+    public static final int bt_main_white_light_unselect=0x7f06002b;
+    public static final int bt_search=0x7f06002c;
+    public static final int bt_timing_close_nor=0x7f06002d;
+    public static final int bt_timing_close_press=0x7f06002e;
+    public static final int bt_timing_delete_nor=0x7f06002f;
+    public static final int bt_timing_delete_press=0x7f060030;
+    public static final int bt_timing_off_select=0x7f060031;
+    public static final int bt_timing_off_unselect=0x7f060032;
+    public static final int bt_timing_on_select=0x7f060033;
+    public static final int bt_timing_on_unselect=0x7f060034;
+    public static final int button=0x7f060035;
+    public static final int color_picker=0x7f060036;
+    public static final int color_range=0x7f060037;
+    public static final int colorno=0x7f060038;
+    public static final int colorset=0x7f060039;
+    public static final int common_full_open_on_phone=0x7f06003a;
+    public static final int common_google_signin_btn_icon_dark=0x7f06003b;
+    public static final int common_google_signin_btn_icon_dark_focused=0x7f06003c;
+    public static final int common_google_signin_btn_icon_dark_normal=0x7f06003d;
+    public static final int common_google_signin_btn_icon_dark_normal_background=0x7f06003e;
+    public static final int common_google_signin_btn_icon_disabled=0x7f06003f;
+    public static final int common_google_signin_btn_icon_light=0x7f060040;
+    public static final int common_google_signin_btn_icon_light_focused=0x7f060041;
+    public static final int common_google_signin_btn_icon_light_normal=0x7f060042;
+    public static final int common_google_signin_btn_icon_light_normal_background=0x7f060043;
+    public static final int common_google_signin_btn_text_dark=0x7f060044;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f060045;
+    public static final int common_google_signin_btn_text_dark_normal=0x7f060046;
+    public static final int common_google_signin_btn_text_dark_normal_background=0x7f060047;
+    public static final int common_google_signin_btn_text_disabled=0x7f060048;
+    public static final int common_google_signin_btn_text_light=0x7f060049;
+    public static final int common_google_signin_btn_text_light_focused=0x7f06004a;
+    public static final int common_google_signin_btn_text_light_normal=0x7f06004b;
+    public static final int common_google_signin_btn_text_light_normal_background=0x7f06004c;
+    public static final int control_ri=0x7f06004d;
+    public static final int danxuan_nor=0x7f06004e;
+    public static final int danxuan_select=0x7f06004f;
+    public static final int defult=0x7f060050;
+    public static final int dialog_menu_delete=0x7f060051;
+    public static final int dialog_menu_edit=0x7f060052;
+    public static final int dialog_menu_edit_no=0x7f060053;
+    public static final int dialog_menu_edit_ok=0x7f060054;
+    public static final int dialog_menu_edit_remov=0x7f060055;
+    public static final int dis=0x7f060056;
+    public static final int ditu=0x7f060057;
+    public static final int edit=0x7f060058;
+    public static final int edit1=0x7f060059;
+    public static final int edit2=0x7f06005a;
+    public static final int edtext_bg=0x7f06005b;
+    public static final int email=0x7f06005c;
+    public static final int end=0x7f06005d;
+    public static final int et_dialog_menu_edit=0x7f06005e;
+    public static final int exit=0x7f06005f;
+    public static final int exit1=0x7f060060;
+    public static final int exit2=0x7f060061;
+    public static final int five=0x7f060062;
+    public static final int four=0x7f060063;
+    public static final int gantanhao=0x7f060064;
+    public static final int go=0x7f060065;
+    public static final int googleg_disabled_color_18=0x7f060066;
+    public static final int googleg_standard_color_18=0x7f060067;
+    public static final int guanji=0x7f060068;
+    public static final int ic_launcher=0x7f060069;
+    public static final int ic_s_light=0x7f06006a;
+    public static final int increase_device=0x7f06006b;
+    public static final int iv_battery=0x7f06006c;
+    public static final int iv_loading_says1=0x7f06006d;
+    public static final int iv_loading_says2=0x7f06006e;
+    public static final int iv_loading_says3=0x7f06006f;
+    public static final int iv_loading_says4=0x7f060070;
+    public static final int iv_main_switch_light=0x7f060071;
+    public static final int iv_rssi=0x7f060072;
+    public static final int iv_state=0x7f060073;
+    public static final int iv_timing_delete=0x7f060074;
+    public static final int jiantou=0x7f060075;
+    public static final int lanya=0x7f060076;
+    public static final int left_check=0x7f060077;
+    public static final int left_selector=0x7f060078;
+    public static final int left_uncheck=0x7f060079;
+    public static final int lin_but=0x7f06007a;
+    public static final int line=0x7f06007b;
+    public static final int list_model_checked=0x7f06007c;
+    public static final int list_model_selector=0x7f06007d;
+    public static final int list_model_unchecked=0x7f06007e;
+    public static final int loading_radio=0x7f06007f;
+    public static final int location_marker=0x7f060080;
+    public static final int login=0x7f060081;
+    public static final int luzhi=0x7f060082;
+    public static final int main_bluetooth=0x7f060083;
+    public static final int main_collect=0x7f060084;
+    public static final int main_seekbar_background=0x7f060085;
+    public static final int main_seekbar_drawable=0x7f060086;
+    public static final int main_seekbar_progress=0x7f060087;
+    public static final int main_timing=0x7f060088;
+    public static final int main_timings=0x7f060089;
+    public static final int map_model=0x7f06008a;
+    public static final int map_model_checked=0x7f06008b;
+    public static final int map_model_selector=0x7f06008c;
+    public static final int map_model_unchecked=0x7f06008d;
+    public static final int middle_check=0x7f06008e;
+    public static final int middle_selector=0x7f06008f;
+    public static final int middle_uncheck=0x7f060090;
+    public static final int notification_action_background=0x7f060091;
+    public static final int notification_bg=0x7f060092;
+    public static final int notification_bg_low=0x7f060093;
+    public static final int notification_bg_low_normal=0x7f060094;
+    public static final int notification_bg_low_pressed=0x7f060095;
+    public static final int notification_bg_normal=0x7f060096;
+    public static final int notification_bg_normal_pressed=0x7f060097;
+    public static final int notification_icon_background=0x7f060098;
+    public static final int notification_template_icon_bg=0x7f060099;
+    public static final int notification_template_icon_low_bg=0x7f06009a;
+    public static final int notification_tile_bg=0x7f06009b;
+    public static final int notify_panel_notification_icon_bg=0x7f06009c;
+    public static final int one=0x7f06009d;
+    public static final int paizhao=0x7f06009e;
+    public static final int paizhao1=0x7f06009f;
+    public static final int parting_line=0x7f0600a0;
+    public static final int password=0x7f0600a1;
+    public static final int pic=0x7f0600a2;
+    public static final int preserve_device=0x7f0600a3;
+    public static final int qianbi=0x7f0600a4;
+    public static final int radio_button=0x7f0600a5;
+    public static final int register=0x7f0600a6;
+    public static final int register_back=0x7f0600a7;
+    public static final int right_selector=0x7f0600a8;
+    public static final int rigth_check=0x7f0600a9;
+    public static final int rigth_uncheack=0x7f0600aa;
+    public static final int rssi=0x7f0600ab;
+    public static final int rssicolor1=0x7f0600ac;
+    public static final int rssicolor2=0x7f0600ad;
+    public static final int s=0x7f0600ae;
+    public static final int sb_main_brightness_select=0x7f0600af;
+    public static final int sb_main_brightness_thumb=0x7f0600b0;
+    public static final int sb_main_brightness_unselect=0x7f0600b1;
+    public static final int scan=0x7f0600b2;
+    public static final int search=0x7f0600b3;
+    public static final int setname=0x7f0600b4;
+    public static final int setname1=0x7f0600b5;
+    public static final int setname2=0x7f0600b6;
+    public static final int setting=0x7f0600b7;
+    public static final int shezhi=0x7f0600b8;
+    public static final int start_icon=0x7f0600b9;
+    public static final int startloading=0x7f0600ba;
+    public static final int startloading_bg=0x7f0600bb;
+    public static final int startloading_icon=0x7f0600bc;
+    public static final int switch_bottom=0x7f0600bd;
+    public static final int switch_btn_pressed=0x7f0600be;
+    public static final int switch_frame=0x7f0600bf;
+    public static final int switch_mask=0x7f0600c0;
+    public static final int sxt1=0x7f0600c1;
+    public static final int sxt2=0x7f0600c2;
+    public static final int sxt_but=0x7f0600c3;
+    public static final int three=0x7f0600c4;
+    public static final int timing_close=0x7f0600c5;
+    public static final int timing_delete=0x7f0600c6;
+    public static final int top=0x7f0600c7;
+    public static final int tubiao=0x7f0600c8;
+    public static final int tv_dialog_menu_delete=0x7f0600c9;
+    public static final int tv_dialog_menu_edit=0x7f0600ca;
+    public static final int tv_dialog_menu_edit_no=0x7f0600cb;
+    public static final int tv_dialog_menu_edit_ok=0x7f0600cc;
+    public static final int two=0x7f0600cd;
+    public static final int user=0x7f0600ce;
+    public static final int vodeo=0x7f0600cf;
+    public static final int xiangji=0x7f0600d0;
+    public static final int xj=0x7f0600d1;
+    public static final int xjsg1=0x7f0600d2;
+    public static final int xjsg2=0x7f0600d3;
+    public static final int yj_bk=0x7f0600d4;
+    public static final int zhaoxiang=0x7f0600d5;
   }
   public static final class id {
-    public static final int bluetooth1=0x7f050000;
-    public static final int bt_about=0x7f050001;
-    public static final int bt_bluetooth_disconnect=0x7f050002;
-    public static final int bt_bluetooth_search=0x7f050003;
-    public static final int bt_menu=0x7f050004;
-    public static final int bt_tubiao=0x7f050005;
-    public static final int fl_bluetooth_whole=0x7f050006;
-    public static final int fl_preserve_listview=0x7f050007;
-    public static final int fullscreen=0x7f050008;
-    public static final int iv=0x7f050009;
-    public static final int iv_bluetooth_listview_item=0x7f05000a;
-    public static final int iv_electricity=0x7f05000b;
-    public static final int left=0x7f05000c;
-    public static final int ll_top=0x7f05000d;
-    public static final int lv_bluetooth_increase=0x7f05000e;
-    public static final int lv_bluetooth_preserve=0x7f05000f;
-    public static final int margin=0x7f050010;
-    public static final int none=0x7f050011;
-    public static final int right=0x7f050012;
-    public static final int selected_view=0x7f050013;
-    public static final int slidingmenumain=0x7f050014;
-    public static final int tv_device_list=0x7f050015;
-    public static final int tv_dis=0x7f050016;
-    public static final int tv_name=0x7f050017;
-    public static final int tv_rssi=0x7f050018;
-    public static final int tv_search_list=0x7f050019;
-    public static final int tv_state=0x7f05001a;
+    public static final int action0=0x7f070000;
+    public static final int action_container=0x7f070001;
+    public static final int action_divider=0x7f070002;
+    public static final int action_image=0x7f070003;
+    public static final int action_text=0x7f070004;
+    public static final int actions=0x7f070005;
+    public static final int adjust_height=0x7f070006;
+    public static final int adjust_width=0x7f070007;
+    public static final int async=0x7f070008;
+    public static final int auto=0x7f070009;
+    public static final int blocking=0x7f07000a;
+    public static final int bluetooth1=0x7f07000b;
+    public static final int bt_about=0x7f07000c;
+    public static final int bt_bluetooth_disconnect=0x7f07000d;
+    public static final int bt_bluetooth_search=0x7f07000e;
+    public static final int bt_menu=0x7f07000f;
+    public static final int bt_tubiao=0x7f070010;
+    public static final int cancel_action=0x7f070011;
+    public static final int chronometer=0x7f070012;
+    public static final int dark=0x7f070013;
+    public static final int end_padder=0x7f070014;
+    public static final int fl_bluetooth_whole=0x7f070015;
+    public static final int fl_preserve_listview=0x7f070016;
+    public static final int forever=0x7f070017;
+    public static final int fullscreen=0x7f070018;
+    public static final int icon=0x7f070019;
+    public static final int icon_group=0x7f07001a;
+    public static final int icon_only=0x7f07001b;
+    public static final int info=0x7f07001c;
+    public static final int italic=0x7f07001d;
+    public static final int iv=0x7f07001e;
+    public static final int iv_bluetooth_listview_item=0x7f07001f;
+    public static final int iv_electricity=0x7f070020;
+    public static final int left=0x7f070021;
+    public static final int light=0x7f070022;
+    public static final int line1=0x7f070023;
+    public static final int line3=0x7f070024;
+    public static final int ll_top=0x7f070025;
+    public static final int lv_bluetooth_increase=0x7f070026;
+    public static final int lv_bluetooth_preserve=0x7f070027;
+    public static final int mainTextView2=0x7f070028;
+    public static final int margin=0x7f070029;
+    public static final int media_actions=0x7f07002a;
+    public static final int none=0x7f07002b;
+    public static final int normal=0x7f07002c;
+    public static final int notification_background=0x7f07002d;
+    public static final int notification_main_column=0x7f07002e;
+    public static final int notification_main_column_container=0x7f07002f;
+    public static final int right=0x7f070030;
+    public static final int right_icon=0x7f070031;
+    public static final int right_side=0x7f070032;
+    public static final int selected_view=0x7f070033;
+    public static final int slidingmenumain=0x7f070034;
+    public static final int standard=0x7f070035;
+    public static final int status_bar_latest_event_content=0x7f070036;
+    public static final int text=0x7f070037;
+    public static final int text2=0x7f070038;
+    public static final int time=0x7f070039;
+    public static final int title=0x7f07003a;
+    public static final int tv_device_list=0x7f07003b;
+    public static final int tv_dis=0x7f07003c;
+    public static final int tv_name=0x7f07003d;
+    public static final int tv_rssi=0x7f07003e;
+    public static final int tv_search_list=0x7f07003f;
+    public static final int tv_state=0x7f070040;
+    public static final int wide=0x7f070041;
   }
   public static final class integer {
-    public static final int google_play_services_version=0x7f060000;
+    public static final int cancel_button_image_alpha=0x7f080000;
+    public static final int google_play_services_version=0x7f080001;
+    public static final int status_bar_notification_info_maxnum=0x7f080002;
   }
   public static final class layout {
-    public static final int bluetooth=0x7f070000;
-    public static final int bluetooth_increase_listview=0x7f070001;
-    public static final int bluetooth_preserve_listview=0x7f070002;
-    public static final int main=0x7f070003;
-    public static final int slidingmenumain=0x7f070004;
+    public static final int bluetooth=0x7f090000;
+    public static final int bluetooth_increase_listview=0x7f090001;
+    public static final int bluetooth_preserve_listview=0x7f090002;
+    public static final int main=0x7f090003;
+    public static final int notification_action=0x7f090004;
+    public static final int notification_action_tombstone=0x7f090005;
+    public static final int notification_media_action=0x7f090006;
+    public static final int notification_media_cancel_action=0x7f090007;
+    public static final int notification_template_big_media=0x7f090008;
+    public static final int notification_template_big_media_custom=0x7f090009;
+    public static final int notification_template_big_media_narrow=0x7f09000a;
+    public static final int notification_template_big_media_narrow_custom=0x7f09000b;
+    public static final int notification_template_custom_big=0x7f09000c;
+    public static final int notification_template_icon_group=0x7f09000d;
+    public static final int notification_template_lines_media=0x7f09000e;
+    public static final int notification_template_media=0x7f09000f;
+    public static final int notification_template_media_custom=0x7f090010;
+    public static final int notification_template_part_chronometer=0x7f090011;
+    public static final int notification_template_part_time=0x7f090012;
+    public static final int slidingmenumain=0x7f090013;
   }
   public static final class string {
-    public static final int After_login_out_all_connected_devices_are_disconnected=0x7f080000;
-    public static final int Alarm=0x7f080001;
-    public static final int Battery=0x7f080002;
-    public static final int Edit=0x7f080003;
-    public static final int Longitude=0x7f080004;
-    public static final int Photo_success=0x7f080005;
-    public static final int Restore_factory_settings=0x7f080006;
-    public static final int Ringtones=0x7f080007;
-    public static final int Sound=0x7f080008;
-    public static final int The_bop_lost_beyond_the_safe_distance=0x7f080009;
-    public static final int Time=0x7f08000a;
-    public static final int Vibration=0x7f08000b;
-    public static final int Whether_to_Restore_factory_settings=0x7f08000c;
-    public static final int abnormal_occurrence=0x7f08000d;
-    public static final int abnormal_password_modify=0x7f08000e;
-    public static final int abnormal_password_retrieval=0x7f08000f;
-    public static final int abnormal_upload_of_position_information=0x7f080010;
-    public static final int about=0x7f080011;
-    public static final int activate_account=0x7f080012;
-    public static final int activation_mail_sent=0x7f080013;
-    public static final int activation_mail_sent_an_exception=0x7f080014;
-    public static final int add_devices=0x7f080015;
-    public static final int address=0x7f080016;
-    public static final int after_removal_the_current_device_will_be_removed=0x7f080017;
-    public static final int alarm_distance=0x7f080018;
-    public static final int amap=0x7f080019;
-    public static final int an_exception_occurred_on_device_unbound=0x7f08001a;
-    public static final int app_name=0x7f08001b;
-    public static final int bind_device_successfully=0x7f08001c;
-    public static final int bind_user_exception=0x7f08001d;
-    public static final int bluetooth=0x7f08001e;
-    public static final int call=0x7f08001f;
-    public static final int camera_mode=0x7f080020;
-    public static final int cancel=0x7f080021;
-    public static final int cannot_activate_repeatedly=0x7f080022;
-    public static final int clear_record=0x7f080023;
-    public static final int close=0x7f080024;
-    public static final int common_google_play_services_unknown_issue=0x7f080025;
-    public static final int complete=0x7f080026;
-    public static final int confirm=0x7f080027;
-    public static final int connect=0x7f080028;
-    public static final int connect_device=0x7f080029;
-    public static final int connected_five=0x7f08002a;
-    public static final int connecting=0x7f08002b;
-    public static final int default_web_client_id=0x7f08002c;
-    public static final int dele=0x7f08002d;
-    public static final int delete=0x7f08002e;
-    public static final int delete_device=0x7f08002f;
-    public static final int device_does_not_exist=0x7f080030;
-    public static final int device_list=0x7f080031;
-    public static final int device_not_bound=0x7f080032;
-    public static final int device_unbound_successfully=0x7f080033;
-    public static final int dis=0x7f080034;
-    public static final int disconnect=0x7f080035;
-    public static final int do_you_want_to_delete_the_device=0x7f080036;
-    public static final int email=0x7f080037;
-    public static final int email_empty=0x7f080038;
-    public static final int enabled=0x7f080039;
-    public static final int far=0x7f08003a;
-    public static final int firebase_database_url=0x7f08003b;
-    public static final int flash=0x7f08003c;
-    public static final int forgot_password=0x7f08003d;
-    public static final int gcm_defaultSenderId=0x7f08003e;
-    public static final int general_settings=0x7f08003f;
-    public static final int google=0x7f080040;
-    public static final int google_api_key=0x7f080041;
-    public static final int google_app_id=0x7f080042;
-    public static final int google_crash_reporting_api_key=0x7f080043;
-    public static final int google_storage_bucket=0x7f080044;
-    public static final int head_updated_successfully=0x7f080045;
-    public static final int history_lost_record=0x7f080046;
-    public static final int incomplete_device_information=0x7f080047;
-    public static final int incomplete_information=0x7f080048;
-    public static final int incomplete_user_information=0x7f080049;
-    public static final int json_string_is_empty=0x7f08004a;
-    public static final int last_lost_address=0x7f08004b;
-    public static final int latitude=0x7f08004c;
-    public static final int list_mode=0x7f08004d;
-    public static final int location_information_uploaded_successfully=0x7f08004e;
-    public static final int login=0x7f08004f;
-    public static final int login_exception=0x7f080050;
-    public static final int login_loading=0x7f080051;
-    public static final int login_out=0x7f080052;
-    public static final int login_server_failed=0x7f080053;
-    public static final int login_successful=0x7f080054;
-    public static final int lost_list=0x7f080055;
-    public static final int mac_is_empty=0x7f080056;
-    public static final int mailbox_format_is_incorect=0x7f080057;
-    public static final int main_bluetooth_open=0x7f080058;
-    public static final int main_open=0x7f080059;
-    public static final int main_quit=0x7f08005a;
-    public static final int make_the_search_easy=0x7f08005b;
-    public static final int map=0x7f08005c;
-    public static final int map_mode=0x7f08005d;
-    public static final int middle=0x7f08005e;
-    public static final int missing_exception=0x7f08005f;
-    public static final int missing_successfully=0x7f080060;
-    public static final int mobile_phone_set=0x7f080061;
-    public static final int modify_device_head_to_appear_abnormal=0x7f080062;
-    public static final int modify_device_name_exception=0x7f080063;
-    public static final int modify_device_name_successfully=0x7f080064;
-    public static final int modify_name=0x7f080065;
-    public static final int modify_password=0x7f080066;
-    public static final int name=0x7f080067;
-    public static final int near=0x7f080068;
-    public static final int new_password=0x7f080069;
-    public static final int no_device=0x7f08006a;
-    public static final int not_enabled=0x7f08006b;
-    public static final int not_missing=0x7f08006c;
-    public static final int old_password=0x7f08006d;
-    public static final int open=0x7f08006e;
-    public static final int password=0x7f08006f;
-    public static final int password_error=0x7f080070;
-    public static final int password_successfully_modified=0x7f080071;
-    public static final int project_id=0x7f080072;
-    public static final int query_all_devices_successfully=0x7f080073;
-    public static final int query_data_success=0x7f080074;
-    public static final int query_exception=0x7f080075;
-    public static final int quick_registration=0x7f080076;
-    public static final int register=0x7f080077;
-    public static final int register_successful=0x7f080078;
-    public static final int relieve_bound=0x7f080079;
-    public static final int relieve_missing=0x7f08007a;
-    public static final int relieve_missing_exception=0x7f08007b;
-    public static final int relieve_missing_successfully=0x7f08007c;
-    public static final int rename=0x7f08007d;
-    public static final int request_server_failed=0x7f08007e;
-    public static final int requesting_server_now=0x7f08007f;
-    public static final int retrieve_password_mail_sent_successfully=0x7f080080;
-    public static final int rssi=0x7f080081;
-    public static final int saved_devices=0x7f080082;
-    public static final int search_list=0x7f080083;
-    public static final int searching=0x7f080084;
-    public static final int send_mail_reported_abnormal_equipment=0x7f080085;
-    public static final int send_mail_stolen_equipment_successfully=0x7f080086;
-    public static final int send_mail_to_an_exception=0x7f080087;
-    public static final int send_password_reset_connection=0x7f080088;
-    public static final int serial_number=0x7f080089;
-    public static final int settings=0x7f08008a;
-    public static final int silent_area=0x7f08008b;
-    public static final int status=0x7f08008c;
-    public static final int strong=0x7f08008d;
-    public static final int the_current_network_is_unavailable=0x7f08008e;
-    public static final int the_device_does_not_belong_to_you_can_not_relieve_missing=0x7f08008f;
-    public static final int the_device_does_not_have_a_corresponding_record=0x7f080090;
-    public static final int the_device_has_been_bound=0x7f080091;
-    public static final int the_device_is_not_bound=0x7f080092;
-    public static final int the_mailbox_has_been_registered=0x7f080093;
-    public static final int the_password_is_empty=0x7f080094;
-    public static final int the_user_is_not_bound_to_any_device=0x7f080095;
-    public static final int the_user_is_not_logged_in_or_not_activated=0x7f080096;
-    public static final int the_user_is_not_registered_or_country_is_empty=0x7f080097;
-    public static final int the_value_you_entered_is_empty=0x7f080098;
-    public static final int turn_off_the_alarm=0x7f080099;
-    public static final int unbound=0x7f08009a;
-    public static final int updata_name=0x7f08009b;
-    public static final int user_does_not_exist=0x7f08009c;
-    public static final int user_information_incomplete=0x7f08009d;
-    public static final int user_information_is_incorrect=0x7f08009e;
-    public static final int user_information_is_incorrectly_filled=0x7f08009f;
-    public static final int user_not_activated=0x7f0800a0;
-    public static final int user_not_logined_in=0x7f0800a1;
-    public static final int user_not_registered=0x7f0800a2;
-    public static final int username_or_password_is_empty=0x7f0800a3;
-    public static final int version=0x7f0800a4;
-    public static final int weak=0x7f0800a5;
+    public static final int After_login_out_all_connected_devices_are_disconnected=0x7f0a0000;
+    public static final int Alarm=0x7f0a0001;
+    public static final int Battery=0x7f0a0002;
+    public static final int Edit=0x7f0a0003;
+    public static final int Longitude=0x7f0a0004;
+    public static final int Photo_success=0x7f0a0005;
+    public static final int Restore_factory_settings=0x7f0a0006;
+    public static final int Ringtones=0x7f0a0007;
+    public static final int Sound=0x7f0a0008;
+    public static final int The_bop_lost_beyond_the_safe_distance=0x7f0a0009;
+    public static final int Time=0x7f0a000a;
+    public static final int Vibration=0x7f0a000b;
+    public static final int Whether_to_Restore_factory_settings=0x7f0a000c;
+    public static final int abnormal_occurrence=0x7f0a000d;
+    public static final int abnormal_password_modify=0x7f0a000e;
+    public static final int abnormal_password_retrieval=0x7f0a000f;
+    public static final int abnormal_upload_of_position_information=0x7f0a0010;
+    public static final int about=0x7f0a0011;
+    public static final int activate_account=0x7f0a0012;
+    public static final int activation_mail_sent=0x7f0a0013;
+    public static final int activation_mail_sent_an_exception=0x7f0a0014;
+    public static final int add_devices=0x7f0a0015;
+    public static final int address=0x7f0a0016;
+    public static final int after_removal_the_current_device_will_be_removed=0x7f0a0017;
+    public static final int alarm_distance=0x7f0a0018;
+    public static final int amap=0x7f0a0019;
+    public static final int an_exception_occurred_on_device_unbound=0x7f0a001a;
+    public static final int app_name=0x7f0a001b;
+    public static final int bind_device_successfully=0x7f0a001c;
+    public static final int bind_user_exception=0x7f0a001d;
+    public static final int bluetooth=0x7f0a001e;
+    public static final int call=0x7f0a001f;
+    public static final int camera_mode=0x7f0a0020;
+    public static final int cancel=0x7f0a0021;
+    public static final int cannot_activate_repeatedly=0x7f0a0022;
+    public static final int clear_record=0x7f0a0023;
+    public static final int close=0x7f0a0024;
+    public static final int common_google_play_services_enable_button=0x7f0a0025;
+    public static final int common_google_play_services_enable_text=0x7f0a0026;
+    public static final int common_google_play_services_enable_title=0x7f0a0027;
+    public static final int common_google_play_services_install_button=0x7f0a0028;
+    public static final int common_google_play_services_install_text=0x7f0a0029;
+    public static final int common_google_play_services_install_title=0x7f0a002a;
+    public static final int common_google_play_services_notification_channel_name=0x7f0a002b;
+    public static final int common_google_play_services_notification_ticker=0x7f0a002c;
+    public static final int common_google_play_services_unknown_issue=0x7f0a002d;
+    public static final int common_google_play_services_unsupported_text=0x7f0a002e;
+    public static final int common_google_play_services_update_button=0x7f0a002f;
+    public static final int common_google_play_services_update_text=0x7f0a0030;
+    public static final int common_google_play_services_update_title=0x7f0a0031;
+    public static final int common_google_play_services_updating_text=0x7f0a0032;
+    public static final int common_google_play_services_wear_update_text=0x7f0a0033;
+    public static final int common_open_on_phone=0x7f0a0034;
+    public static final int common_signin_button_text=0x7f0a0035;
+    public static final int common_signin_button_text_long=0x7f0a0036;
+    public static final int complete=0x7f0a0037;
+    public static final int confirm=0x7f0a0038;
+    public static final int connect=0x7f0a0039;
+    public static final int connect_device=0x7f0a003a;
+    public static final int connected_five=0x7f0a003b;
+    public static final int connecting=0x7f0a003c;
+    public static final int default_web_client_id=0x7f0a003d;
+    public static final int dele=0x7f0a003e;
+    public static final int delete=0x7f0a003f;
+    public static final int delete_device=0x7f0a0040;
+    public static final int device_does_not_exist=0x7f0a0041;
+    public static final int device_list=0x7f0a0042;
+    public static final int device_not_bound=0x7f0a0043;
+    public static final int device_unbound_successfully=0x7f0a0044;
+    public static final int dis=0x7f0a0045;
+    public static final int disconnect=0x7f0a0046;
+    public static final int do_you_want_to_delete_the_device=0x7f0a0047;
+    public static final int email=0x7f0a0048;
+    public static final int email_empty=0x7f0a0049;
+    public static final int enabled=0x7f0a004a;
+    public static final int far=0x7f0a004b;
+    public static final int firebase_database_url=0x7f0a004c;
+    public static final int flash=0x7f0a004d;
+    public static final int forgot_password=0x7f0a004e;
+    public static final int gcm_defaultSenderId=0x7f0a004f;
+    public static final int general_settings=0x7f0a0050;
+    public static final int google=0x7f0a0051;
+    public static final int google_api_key=0x7f0a0052;
+    public static final int google_app_id=0x7f0a0053;
+    public static final int google_crash_reporting_api_key=0x7f0a0054;
+    public static final int google_storage_bucket=0x7f0a0055;
+    public static final int head_updated_successfully=0x7f0a0056;
+    public static final int history_lost_record=0x7f0a0057;
+    public static final int incomplete_device_information=0x7f0a0058;
+    public static final int incomplete_information=0x7f0a0059;
+    public static final int incomplete_user_information=0x7f0a005a;
+    public static final int json_string_is_empty=0x7f0a005b;
+    public static final int last_lost_address=0x7f0a005c;
+    public static final int latitude=0x7f0a005d;
+    public static final int list_mode=0x7f0a005e;
+    public static final int location_information_uploaded_successfully=0x7f0a005f;
+    public static final int login=0x7f0a0060;
+    public static final int login_exception=0x7f0a0061;
+    public static final int login_loading=0x7f0a0062;
+    public static final int login_out=0x7f0a0063;
+    public static final int login_server_failed=0x7f0a0064;
+    public static final int login_successful=0x7f0a0065;
+    public static final int lost_list=0x7f0a0066;
+    public static final int mac_is_empty=0x7f0a0067;
+    public static final int mailbox_format_is_incorect=0x7f0a0068;
+    public static final int main_bluetooth_open=0x7f0a0069;
+    public static final int main_open=0x7f0a006a;
+    public static final int main_quit=0x7f0a006b;
+    public static final int make_the_search_easy=0x7f0a006c;
+    public static final int map=0x7f0a006d;
+    public static final int map_mode=0x7f0a006e;
+    public static final int middle=0x7f0a006f;
+    public static final int missing_exception=0x7f0a0070;
+    public static final int missing_successfully=0x7f0a0071;
+    public static final int mobile_phone_set=0x7f0a0072;
+    public static final int modify_device_head_to_appear_abnormal=0x7f0a0073;
+    public static final int modify_device_name_exception=0x7f0a0074;
+    public static final int modify_device_name_successfully=0x7f0a0075;
+    public static final int modify_name=0x7f0a0076;
+    public static final int modify_password=0x7f0a0077;
+    public static final int name=0x7f0a0078;
+    public static final int near=0x7f0a0079;
+    public static final int new_password=0x7f0a007a;
+    public static final int no_device=0x7f0a007b;
+    public static final int not_enabled=0x7f0a007c;
+    public static final int not_missing=0x7f0a007d;
+    public static final int old_password=0x7f0a007e;
+    public static final int open=0x7f0a007f;
+    public static final int password=0x7f0a0080;
+    public static final int password_error=0x7f0a0081;
+    public static final int password_successfully_modified=0x7f0a0082;
+    public static final int project_id=0x7f0a0083;
+    public static final int query_all_devices_successfully=0x7f0a0084;
+    public static final int query_data_success=0x7f0a0085;
+    public static final int query_exception=0x7f0a0086;
+    public static final int quick_registration=0x7f0a0087;
+    public static final int register=0x7f0a0088;
+    public static final int register_successful=0x7f0a0089;
+    public static final int relieve_bound=0x7f0a008a;
+    public static final int relieve_missing=0x7f0a008b;
+    public static final int relieve_missing_exception=0x7f0a008c;
+    public static final int relieve_missing_successfully=0x7f0a008d;
+    public static final int rename=0x7f0a008e;
+    public static final int request_server_failed=0x7f0a008f;
+    public static final int requesting_server_now=0x7f0a0090;
+    public static final int retrieve_password_mail_sent_successfully=0x7f0a0091;
+    public static final int rssi=0x7f0a0092;
+    public static final int saved_devices=0x7f0a0093;
+    public static final int search_list=0x7f0a0094;
+    public static final int searching=0x7f0a0095;
+    public static final int send_mail_reported_abnormal_equipment=0x7f0a0096;
+    public static final int send_mail_stolen_equipment_successfully=0x7f0a0097;
+    public static final int send_mail_to_an_exception=0x7f0a0098;
+    public static final int send_password_reset_connection=0x7f0a0099;
+    public static final int serial_number=0x7f0a009a;
+    public static final int settings=0x7f0a009b;
+    public static final int silent_area=0x7f0a009c;
+    public static final int status=0x7f0a009d;
+    public static final int status_bar_notification_info_overflow=0x7f0a009e;
+    public static final int strong=0x7f0a009f;
+    public static final int the_current_network_is_unavailable=0x7f0a00a0;
+    public static final int the_device_does_not_belong_to_you_can_not_relieve_missing=0x7f0a00a1;
+    public static final int the_device_does_not_have_a_corresponding_record=0x7f0a00a2;
+    public static final int the_device_has_been_bound=0x7f0a00a3;
+    public static final int the_device_is_not_bound=0x7f0a00a4;
+    public static final int the_mailbox_has_been_registered=0x7f0a00a5;
+    public static final int the_password_is_empty=0x7f0a00a6;
+    public static final int the_user_is_not_bound_to_any_device=0x7f0a00a7;
+    public static final int the_user_is_not_logged_in_or_not_activated=0x7f0a00a8;
+    public static final int the_user_is_not_registered_or_country_is_empty=0x7f0a00a9;
+    public static final int the_value_you_entered_is_empty=0x7f0a00aa;
+    public static final int turn_off_the_alarm=0x7f0a00ab;
+    public static final int unbound=0x7f0a00ac;
+    public static final int updata_name=0x7f0a00ad;
+    public static final int user_does_not_exist=0x7f0a00ae;
+    public static final int user_information_incomplete=0x7f0a00af;
+    public static final int user_information_is_incorrect=0x7f0a00b0;
+    public static final int user_information_is_incorrectly_filled=0x7f0a00b1;
+    public static final int user_not_activated=0x7f0a00b2;
+    public static final int user_not_logined_in=0x7f0a00b3;
+    public static final int user_not_registered=0x7f0a00b4;
+    public static final int username_or_password_is_empty=0x7f0a00b5;
+    public static final int version=0x7f0a00b6;
+    public static final int weak=0x7f0a00b7;
   }
   public static final class style {
-    public static final int AppBaseTheme=0x7f090000;
-    public static final int AppTheme=0x7f090001;
-    public static final int Bottom_Tab_Style=0x7f090002;
-    public static final int Bottom_list_Style=0x7f090003;
-    public static final int Bottom_map_Style=0x7f090004;
-    public static final int MenuDialog=0x7f090005;
-    public static final int MenuEditDialog=0x7f090006;
+    public static final int AppBaseTheme=0x7f0b0000;
+    public static final int AppTheme=0x7f0b0001;
+    public static final int Bottom_Tab_Style=0x7f0b0002;
+    public static final int Bottom_list_Style=0x7f0b0003;
+    public static final int Bottom_map_Style=0x7f0b0004;
+    public static final int MenuDialog=0x7f0b0005;
+    public static final int MenuEditDialog=0x7f0b0006;
+    public static final int TextAppearance_Compat_Notification=0x7f0b0007;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0b0008;
+    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0b0009;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0b000a;
+    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0b000b;
+    public static final int TextAppearance_Compat_Notification_Media=0x7f0b000c;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0b000d;
+    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0b000e;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0b000f;
+    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0b0010;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0b0011;
+    public static final int Widget_Compat_NotificationActionText=0x7f0b0012;
   }
   public static final class styleable {
+    /**
+     * Attributes that can be used with a FontFamily.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.trackerdemo.activity:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.trackerdemo.activity:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.trackerdemo.activity:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.trackerdemo.activity:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.trackerdemo.activity:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.trackerdemo.activity:fontProviderQuery}</code></td><td></td></tr>
+     * </table>
+     * @see #FontFamily_fontProviderAuthority
+     * @see #FontFamily_fontProviderCerts
+     * @see #FontFamily_fontProviderFetchStrategy
+     * @see #FontFamily_fontProviderFetchTimeout
+     * @see #FontFamily_fontProviderPackage
+     * @see #FontFamily_fontProviderQuery
+     */
+    public static final int[] FontFamily={
+        0x7f020009, 0x7f02000a, 0x7f02000b, 0x7f02000c, 
+        0x7f02000d, 0x7f02000e
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontProviderAuthority}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.trackerdemo.activity:fontProviderAuthority
+     */
+    public static final int FontFamily_fontProviderAuthority=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontProviderCerts}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.trackerdemo.activity:fontProviderCerts
+     */
+    public static final int FontFamily_fontProviderCerts=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontProviderFetchStrategy}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.trackerdemo.activity:fontProviderFetchStrategy
+     */
+    public static final int FontFamily_fontProviderFetchStrategy=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontProviderFetchTimeout}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.trackerdemo.activity:fontProviderFetchTimeout
+     */
+    public static final int FontFamily_fontProviderFetchTimeout=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontProviderPackage}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.trackerdemo.activity:fontProviderPackage
+     */
+    public static final int FontFamily_fontProviderPackage=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontProviderQuery}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.trackerdemo.activity:fontProviderQuery
+     */
+    public static final int FontFamily_fontProviderQuery=5;
+    /**
+     * Attributes that can be used with a FontFamilyFont.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.trackerdemo.activity:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.trackerdemo.activity:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.trackerdemo.activity:fontWeight}</code></td><td></td></tr>
+     * </table>
+     * @see #FontFamilyFont_font
+     * @see #FontFamilyFont_fontStyle
+     * @see #FontFamilyFont_fontWeight
+     */
+    public static final int[] FontFamilyFont={
+        0x7f020008, 0x7f02000f, 0x7f020010
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#font}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.trackerdemo.activity:font
+     */
+    public static final int FontFamilyFont_font=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>italic</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.trackerdemo.activity:fontStyle
+     */
+    public static final int FontFamilyFont_fontStyle=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#fontWeight}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.trackerdemo.activity:fontWeight
+     */
+    public static final int FontFamilyFont_fontWeight=2;
+    /**
+     * Attributes that can be used with a LoadingImageView.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #LoadingImageView_circleCrop com.trackerdemo.activity:circleCrop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.trackerdemo.activity:imageAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.trackerdemo.activity:imageAspectRatioAdjust}</code></td><td></td></tr>
+     * </table>
+     * @see #LoadingImageView_circleCrop
+     * @see #LoadingImageView_imageAspectRatio
+     * @see #LoadingImageView_imageAspectRatioAdjust
+     */
+    public static final int[] LoadingImageView={
+        0x7f020004, 0x7f020011, 0x7f020012
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#circleCrop}
+     * attribute's value can be found in the {@link #LoadingImageView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.trackerdemo.activity:circleCrop
+     */
+    public static final int LoadingImageView_circleCrop=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#imageAspectRatio}
+     * attribute's value can be found in the {@link #LoadingImageView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.trackerdemo.activity:imageAspectRatio
+     */
+    public static final int LoadingImageView_imageAspectRatio=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#imageAspectRatioAdjust}
+     * attribute's value can be found in the {@link #LoadingImageView} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
+     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.trackerdemo.activity:imageAspectRatioAdjust
+     */
+    public static final int LoadingImageView_imageAspectRatioAdjust=2;
+    /**
+     * Attributes that can be used with a SignInButton.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #SignInButton_buttonSize com.trackerdemo.activity:buttonSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_colorScheme com.trackerdemo.activity:colorScheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_scopeUris com.trackerdemo.activity:scopeUris}</code></td><td></td></tr>
+     * </table>
+     * @see #SignInButton_buttonSize
+     * @see #SignInButton_colorScheme
+     * @see #SignInButton_scopeUris
+     */
+    public static final int[] SignInButton={
+        0x7f020003, 0x7f020005, 0x7f020014
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#buttonSize}
+     * attribute's value can be found in the {@link #SignInButton} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>icon_only</td><td>2</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * <tr><td>wide</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.trackerdemo.activity:buttonSize
+     */
+    public static final int SignInButton_buttonSize=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#colorScheme}
+     * attribute's value can be found in the {@link #SignInButton} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>auto</td><td>2</td><td></td></tr>
+     * <tr><td>dark</td><td>0</td><td></td></tr>
+     * <tr><td>light</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.trackerdemo.activity:colorScheme
+     */
+    public static final int SignInButton_colorScheme=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#scopeUris}
+     * attribute's value can be found in the {@link #SignInButton} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.trackerdemo.activity:scopeUris
+     */
+    public static final int SignInButton_scopeUris=2;
     /**
      * Attributes that can be used with a SlidingMenu.
      * <p>Includes the following attributes:</p>
@@ -562,10 +1146,10 @@ public final class R {
      * @see #SlidingMenu_viewBehind
      */
     public static final int[] SlidingMenu={
-        0x7f020000, 0x7f020001, 0x7f020002, 0x7f020003, 
-        0x7f020004, 0x7f020005, 0x7f020006, 0x7f020007, 
-        0x7f020008, 0x7f020009, 0x7f02000a, 0x7f02000b, 
-        0x7f02000c, 0x7f02000d
+        0x7f020000, 0x7f020001, 0x7f020002, 0x7f020006, 
+        0x7f020007, 0x7f020013, 0x7f020015, 0x7f020016, 
+        0x7f020017, 0x7f020018, 0x7f020019, 0x7f02001a, 
+        0x7f02001b, 0x7f02001c
       };
     /**
      * <p>This symbol is the offset where the {@link com.trackerdemo.activity.R.attr#behindOffset}

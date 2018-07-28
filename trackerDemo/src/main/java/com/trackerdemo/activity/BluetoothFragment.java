@@ -92,9 +92,9 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 	/** Check if long pressed  */
 	boolean isLong = false;
 	SharedPreferences sp;
-	static int screenWidth;   
-    static int screenHeight;  
-    
+	static int screenWidth;
+    static int screenHeight;
+
     public Handler handler = new Handler() {
     	public void handleMessage(android.os.Message msg) {
     		switch (msg.what) {
@@ -103,7 +103,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 			}
     	};
     };
-    
+
     public void setonCloseBluetoothFragment (onCloseBluetoothFragment closeBluetoothFragment) {
 		this.closeBluetoothFragment = closeBluetoothFragment;
 	}
@@ -123,7 +123,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		System.out.println("BluetoothFragment---onCreateView");
-		
+
 		initView();
 
 		// Download Data
@@ -146,14 +146,14 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 	@Override
 	public void onResume() {
 		System.out.println("BluetoothFragment---onResume");
-		
+
 		tv_device_list.setText(R.string.device_list);
 		tv_search_list.setText(R.string.search_list);
 		//MainActivity.getInstance().application.isToux = false;
-		
+
 		super.onResume();
 	}
-	
+
 	@Override
 	public void onPause() {
 		System.out.println("BluetoothFragment---onPause");
@@ -191,7 +191,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 		lv_bluetooth_preserve.setOnItemClickListener(this);
 		lv_bluetooth_increase.setOnItemClickListener(this);
 		bt_bluetooth_search.setOnClickListener(this);
-		
+
 		bt_about = (Button) getActivity().findViewById(R.id.bt_about);
 		bt_about.setOnClickListener(this);;
 	}
@@ -222,7 +222,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 				list_amn.add(0);
 				list_ring.add(0);
 			}
-			
+
 			preserveAdapter = new BluetoothDevicePreserveAdapter(MainActivity.getInstance(),list_preserve, list_isChecked,list_amn,list_ring);
 			lv_bluetooth_preserve.setAdapter(preserveAdapter);
 
@@ -230,7 +230,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 			handler.removeCallbacks(MainActivity.getInstance().runnableReconnect );
             handler.postDelayed(MainActivity.getInstance().runnableReconnect , 2*1000);
 		}
-		
+
 		preserveAdapter = new BluetoothDevicePreserveAdapter(MainActivity.getInstance(),list_preserve, list_isChecked,list_amn,list_ring);
 		lv_bluetooth_preserve.setAdapter(preserveAdapter);
 	}
@@ -253,7 +253,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 
 	@Override
 	public void BluetoothDevices(final BluetoothDevice device) {
-		 
+
 		if (device.getName() != null) {
 			if (device.getName().startsWith("All Tracker") || device.getName().startsWith("Biiken")||device.getName().startsWith("iTAG")) {
                 if (bluetoothSQLiteClass.SelectBluetooth().size() > 0) {
@@ -350,32 +350,32 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 			break;
 
 		case R.id.lv_bluetooth_preserve:
-			
+
 			if (preserveAdapter.getList_state().get(position) == 3 && !isLong) {
-				
+
 				int isam = preserveAdapter.getList_am().get(position);
 				BluetoothDevice bluetoothDevice = bluetoothClass.getDevice();
 				if(bluetoothDevice!=null){
 					if(!bluetoothDevice.equals(preserveAdapter.getList_BluetoothDevice().get(position))){
 						byte[] bs = new byte[1];
 						bs[0] = 0x00;
-						
+
 						if(isam==1 ){
 							MainActivity.getInstance().setFlickerAnimation(MainActivity.getInstance().bt_tubiao);
 							MainActivity.getInstance().isrun = true;
-							 
+
 						}else if(isam==0){
 							MainActivity.getInstance().bt_tubiao.clearAnimation();
 							MainActivity.getInstance().isrun = false;
 						}
 					}else{
-						
+
 						MainActivity.getInstance().showContent();
-						
+
 					}
-					
+
 				}
-				
+
 				device = preserveAdapter.getList_BluetoothDevice().get(position);
 
 				closeBluetoothFragment.onCloseBluetooth(bluetoothSQLiteClass.SelectBluetooth(device.getAddress()));
@@ -406,7 +406,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 				}
 
 				handler.post(new Runnable() {
-					
+
 					@Override
 					public void run() {
 						MainActivity.getInstance().isSend = false;
@@ -417,17 +417,17 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 				bluetoothClass.setDevice(device);
 				int postion = preserveAdapter.getList_BluetoothDevice().indexOf(device);
 				preserveAdapter.setCurrentDevice(postion);
-				
+
 			} else if(preserveAdapter.getList_state().get(position) ==1 && !isLong) {
 
 				device = preserveAdapter.getList_BluetoothDevice().get(position);
-				
+
 				MainActivity.getInstance().getSlidingMenu().showContent();
 				int postion = preserveAdapter.getList_BluetoothDevice().indexOf(device);
 				bluetoothClass.setDevice(device);
 				preserveAdapter.setCurrentDevice(postion);
 				MainActivity.getInstance().tv_state.setText(R.string.disconnect);
-				
+
 				MainActivity.getInstance().iv_electricity.setVisibility(View.INVISIBLE);
 				MainActivity.getInstance().tv_dis.setText("--");
 				MainActivity.getInstance().tv_rssi.setText("--");
@@ -484,7 +484,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 	 * @param iv_chat_head animation
 	 */
 	public void setFlickerAnimation(ImageView iv_chat_head) {
-		
+
 		Log.e("setFlickerAnimation", "setFlickerAnimation");
 		animation = new AlphaAnimation(1, 0); // Change alpha from fully visible
 												// to invisible
@@ -576,7 +576,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 			list_am.set(postion, am);
 			this.notifyDataSetChanged();
 		}
-		
+
 		public void initData() {
 			for (int i = 0; i < list_state.size(); i++) {
 				if (list_state.get(i) == 1) {
@@ -632,7 +632,7 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 
             ImageView iv  = (ImageView) view.findViewById(R.id.iv);
 			TextView tv_name = (TextView) view.findViewById(R.id.tv_name);
-		
+
 			Button bt_bluetooth_disconnect = (Button) view.findViewById(R.id.bt_bluetooth_disconnect);
 			final BluetoothDevice device = list_BluetoothDevice.get(position);
 			final Bluetooth bluetooth = sqLiteClass.SelectBluetooth(device.getAddress());
@@ -646,13 +646,13 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 					} else {
 						iv.clearAnimation();
 					}
-				
+
 					tv_name.setTextColor(Color.parseColor("#ffa500"));
 				} else {
 
 				}
 			}
-			
+
 			if (getList_am().get(position)==1) {
 				iv.clearAnimation();
 				setFlickerAnimation(iv);
@@ -665,17 +665,17 @@ public class BluetoothFragment extends Fragment implements OnItemClickListener, 
 			if (list_state.get(position) == 0) {
 
 			} else if (list_state.get(position) == 1) {
-				
+
 				bt_bluetooth_disconnect.setVisibility(View.GONE);
-				
+
 			} else if (list_state.get(position) == 2) {
-				
+
 				bt_bluetooth_disconnect.setVisibility(View.GONE);
-				
+
 			} else if (list_state.get(position) == 3) {
-				
+
 				if (MainActivity.getInstance().listConnectedDevice.size()==1) {
-					
+
 				} else {
 					if (index!=position) {
 						tv_name.setTextColor(Color.WHITE);

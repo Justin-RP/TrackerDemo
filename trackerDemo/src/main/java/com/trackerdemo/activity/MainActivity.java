@@ -14,6 +14,7 @@ import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.Display;
 import android.view.KeyEvent;
@@ -44,8 +45,22 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import org.w3c.dom.Text;
+
+
 public class MainActivity extends SlidingFragmentActivity implements OnOpenListener, OnCloseListener,
 		OnClickListener, BluetoothConnectible, onCloseBluetoothFragment {
+
+
+
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference rootDatabaseReference;
 
     private static final String TAG = "MainActivity";
 
@@ -54,6 +69,7 @@ public class MainActivity extends SlidingFragmentActivity implements OnOpenListe
     public TextView tv_state; // Connection status
     public TextView tv_dis; // Distance (Far, Mid, Near)
     public TextView tv_rssi; // Signal (Strong, Mid, Weak)
+    public TextView msg;
     public ImageView iv_electricity; // Power
 
     public MediaPlayer player = null; // Alarm music
@@ -138,7 +154,40 @@ public class MainActivity extends SlidingFragmentActivity implements OnOpenListe
     @Override
 	public void onCreate(Bundle savedInstanceState) {
 
-        Log.d(TAG, "onCreate");
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        rootDatabaseReference = firebaseDatabase.getReference();
+
+
+
+        rootDatabaseReference.child("descText").addValueEventListener(new ValueEventListener() {
+                                                                         @Override
+                                                                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+String text = dataSnapshot.getValue(String.class);
+
+msg.setText(text);
+
+                                                                         }
+
+                                                                         @Override
+                                                                         public void onCancelled(@NonNull DatabaseError databaseError) {
+                                                                             Log.e(TAG, "Data base error", databaseError.toException());
+                                                                         }
+                                                                     });
+
+        rootDatabaseReference.child("devices/909/descText").setValue("Maximum 145 words");
+
+        rootDatabaseReference.child("devices/909/descText").setValue(1);
+
+        rootDatabaseReference.child("devices/909/descText").setValue("28/5/2018");
+
+        rootDatabaseReference.child("devices/909/descText").setValue("Maximum 45 words");
+
+        rootDatabaseReference.child("devices/909/descText").setValue(322);
+
+        rootDatabaseReference.child("devices/909/descText").setValue(547);
+
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
@@ -175,6 +224,7 @@ public class MainActivity extends SlidingFragmentActivity implements OnOpenListe
 
 	private void initView() {
 
+        msg = (TextView) findViewById(R.id.mainTextView2);
 		tv_dis = (TextView) findViewById(R.id.tv_dis); // distance (near, mid, far)
 		tv_state = (TextView) findViewById(R.id.tv_state); // connectivity state (connected, disconnected)
 		tv_rssi = (TextView) findViewById(R.id.tv_rssi); // signal strength (weak, mid, strong)
@@ -317,9 +367,9 @@ public class MainActivity extends SlidingFragmentActivity implements OnOpenListe
 
 	@Override
 	protected void onResume() {
-		if (!bluetoothClass.isBluetoothOpen()) {
-			displayOpenBluetooth();
-		}
+//		if (!bluetoothClass.isBluetoothOpen()) {
+//			displayOpenBluetooth();
+//		}
 		super.onResume();
 	}
 
