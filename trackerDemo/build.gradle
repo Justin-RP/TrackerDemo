@@ -27,6 +27,7 @@ dependencies {
     api 'com.nextgen.biiken:biikensdk:1.0.0'
     //compile files('libs/swallesdk.jar')
     implementation 'com.google.firebase:firebase-database:11.8.0'
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:21.0.3'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 }

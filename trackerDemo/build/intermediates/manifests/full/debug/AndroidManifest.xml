@@ -94,7 +94,8 @@
         android:debuggable="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:testOnly="true" >
         <activity
             android:name="com.trackerdemo.activity.MainActivity"
             android:configChanges="locale|layoutDirection"
