@@ -31,30 +31,29 @@
 
         
     </LinearLayout>
- 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="9"
-        android:orientation="vertical" 
-       
+        android:orientation="vertical"
+
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            
-            android:orientation="horizontal" 
-            
+
+            android:orientation="horizontal"
+
             >
-            
-            
-            
+
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -68,23 +67,19 @@
                     android:id="@+id/tv_state"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="10dp"
                     android:layout_gravity="center"
+                    android:padding="10dp"
                     android:text="@string/disconnect"
                     android:textColor="@android:color/white"
                     android:textSize="15sp" />
             </LinearLayout>
 
-        
-            
-            
-            
-            
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -93,36 +88,36 @@
                     android:text="@string/Battery"
                     android:textColor="@android:color/white"
                     android:textSize="15sp" />
-				<ImageView 
-				    android:id="@+id/iv_electricity"
+
+                <ImageView
+                    android:id="@+id/iv_electricity"
                     android:layout_width="60dp"
                     android:layout_height="30dp"
-				    android:layout_gravity="center"
-				    
-				    />
-            
+                    android:layout_gravity="center"
+
+                    />
+
             </LinearLayout>
 
-            
+
         </LinearLayout>
-		
-       <View
+
+        <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@drawable/top"
-             /> 
+            android:background="@drawable/top" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            
-            android:orientation="horizontal" >
+
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -142,15 +137,13 @@
                     android:textColor="@android:color/white"
                     android:textSize="15sp" />
             </LinearLayout>
-            
-            
-            
-            
-                <LinearLayout
+
+
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -171,14 +164,46 @@
                     android:textSize="15sp" />
             </LinearLayout>
 
-            
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/mainTextView2"
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Desc" />
 
     </LinearLayout>
 

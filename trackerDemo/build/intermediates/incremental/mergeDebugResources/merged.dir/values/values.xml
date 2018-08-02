@@ -378,7 +378,7 @@
     <string name="connect_device">Connect Devices First</string>
     <string name="connected_five">5 Devices Can Be Connected</string>
     <string name="connecting">Connecting</string>
-    <string name="default_web_client_id" translatable="false">916851666145-ujr0ueul7tebr2jgih3butp0mg0skqpp.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">1088212173745-76sp723fmek7r4b64mlcq2va1635g3u9.apps.googleusercontent.com</string>
     <string name="dele">Delete</string>
     <string name="delete">Delete The Record Or Not？</string>
     <string name="delete_device">Delete Device</string>
@@ -393,16 +393,16 @@
     <string name="email_empty">Empty email!</string>
     <string name="enabled">On</string>
     <string name="far">Far</string>
-    <string name="firebase_database_url" translatable="false">https://trackerdemo-e3d8a.firebaseio.com/</string>
+    <string name="firebase_database_url" translatable="false">https://trackerdemo-e3d8a.firebaseio.com</string>
     <string name="flash">Flashlight</string>
     <string name="forgot_password">Forget password</string>
-    <string name="gcm_defaultSenderId" translatable="false">916851666145</string>
+    <string name="gcm_defaultSenderId" translatable="false">1088212173745</string>
     <string name="general_settings">General Settings</string>
     <string name="google">Google Map</string>
-    <string name="google_api_key" translatable="false">AIzaSyDkYpaw5Y5NnHVH5zSHErOUNaVPc55Pd7s</string>
-    <string name="google_app_id" translatable="false">1:916851666145:android:73501345b2886750</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDkYpaw5Y5NnHVH5zSHErOUNaVPc55Pd7s</string>
-    <string name="google_storage_bucket" translatable="false">foound-70f13.appspot.com</string>
+    <string name="google_api_key" translatable="false">AIzaSyBj6g0dVwzWXBJuNN5Tq2qqxD9z-hAF0YE</string>
+    <string name="google_app_id" translatable="false">1:1088212173745:android:73501345b2886750</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBj6g0dVwzWXBJuNN5Tq2qqxD9z-hAF0YE</string>
+    <string name="google_storage_bucket" translatable="false">trackerdemo-e3d8a.appspot.com</string>
     <string name="head_updated_successfully">Device photo is uploaded </string>
     <string name="history_lost_record">Lost Location History</string>
     <string name="incomplete_device_information">Incomplete device information</string>
@@ -447,7 +447,7 @@
     <string name="password">Password </string>
     <string name="password_error">Incorrect password!</string>
     <string name="password_successfully_modified">Password modified successfully！</string>
-    <string name="project_id" translatable="false">foound-70f13</string>
+    <string name="project_id" translatable="false">trackerdemo-e3d8a</string>
     <string name="query_all_devices_successfully"> search all the devices success!  </string>
     <string name="query_data_success">query data success !</string>
     <string name="query_exception">query failed!</string>

@@ -15,6 +15,9 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.text.InputFilter;
+import android.text.InputType;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.Display;
 import android.view.KeyEvent;
@@ -25,6 +28,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -64,12 +68,13 @@ public class MainActivity extends SlidingFragmentActivity implements OnOpenListe
 
     private static final String TAG = "MainActivity";
 
-	public Button bt_menu;
+
+    public EditText editName, editDate, editDesc;
+	public Button bt_menu, editButton;
 	public Button bt_tubiao;
     public TextView tv_state; // Connection status
     public TextView tv_dis; // Distance (Far, Mid, Near)
     public TextView tv_rssi; // Signal (Strong, Mid, Weak)
-    public TextView msg;
     public ImageView iv_electricity; // Power
 
     public MediaPlayer player = null; // Alarm music
@@ -155,6 +160,9 @@ public class MainActivity extends SlidingFragmentActivity implements OnOpenListe
 	public void onCreate(Bundle savedInstanceState) {
 
 
+
+
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         rootDatabaseReference = firebaseDatabase.getReference();
 
@@ -163,9 +171,8 @@ public class MainActivity extends SlidingFragmentActivity implements OnOpenListe
         rootDatabaseReference.child("descText").addValueEventListener(new ValueEventListener() {
                                                                          @Override
                                                                          public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-String text = dataSnapshot.getValue(String.class);
 
-msg.setText(text);
+
 
                                                                          }
 
@@ -224,7 +231,10 @@ msg.setText(text);
 
 	private void initView() {
 
-        msg = (TextView) findViewById(R.id.mainTextView2);
+        editButton = (Button) findViewById(R.id.editButton);
+        editDate = (EditText) findViewById(R.id.editDate);
+        editName = (EditText) findViewById(R.id.editName);
+        editDesc = (EditText) findViewById(R.id.editDesc);
 		tv_dis = (TextView) findViewById(R.id.tv_dis); // distance (near, mid, far)
 		tv_state = (TextView) findViewById(R.id.tv_state); // connectivity state (connected, disconnected)
 		tv_rssi = (TextView) findViewById(R.id.tv_rssi); // signal strength (weak, mid, strong)

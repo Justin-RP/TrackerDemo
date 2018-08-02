@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProg\\Android\\Projects\\TrackerDemo\\TrackerDemo\\trackerDemo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\Android\\Lessons\\FYP\\TrackerDemo\\trackerDemo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\AndroidProg\\Android\\Projects\\TrackerDemo\\TrackerDemo\\trackerDemo\\src\\main\\res\\values-v11\\styles.xml",
+                    "source": "D:\\Android\\Lessons\\FYP\\TrackerDemo\\trackerDemo\\src\\main\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
-                        "startOffsets": "182",
+                        "startOffsets": "183",
                         "endLines": "8",
                         "endColumns": "12",
-                        "endOffsets": "316"
+                        "endOffsets": "317"
                     },
                     "to": {
                         "startLines": "2",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\16022916\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\154cfa578a98172ffa583b91fd99b15d\\res\\values-v11\\values.xml",
+                    "source": "C:\\Users\\16022582\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\dcdce4f1756c86181daf13390b60efb2\\res\\values-v11\\values.xml",
                     "from": {
                         "startLines": "3,10,17,24,31,38,45,52,59,66,73,75,77,79,176,178,180,186,233,280,328",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
